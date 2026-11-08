@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: ascode-website:latest
+    container_name: ascode-website
+    ports:
+      - "3000:80"
+    restart: unless-stopped
